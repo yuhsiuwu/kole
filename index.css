@@ -1,0 +1,62 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+div.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100vh;
+    max-width: 100%;
+    text-align: center;
+}
+
+h1{
+    position: relative;
+    top: 20vh;
+    line-height: 100%;
+    vertical-align: middle;
+}
+
+p{
+    position: relative;
+    top: 30vh;
+    line-height: 100%;
+    vertical-align: middle;
+    opacity: 0;
+}
+
+.photos{
+    background-color: pink;
+    width: 33%;
+}
+
+.blogs{
+    background-color: rosybrown;
+    width: 34%;
+}
+
+.aboutme{
+    background-color: sandybrown;
+    width: 33%;
+}
+
+.aboutme:hover > h1{
+    opacity: 0.5;
+}
+.aboutme:hover > p{
+    opacity: 1;
+}
